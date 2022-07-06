@@ -1,5 +1,5 @@
 # Azure Cognitive Search - Semantic Search Demo for CSAs
-**DISCLAIMER: This app is not for production use and is stricly for internal GBBs and CSAs who want to demo to customers the value that Semantic Search can bring to customers.**
+**DISCLAIMER: This app is not for production use and is strictly for internal GBBs and CSAs who want to demo to customers the value that Semantic Search can bring to customers.**
 
 This sample app is for CSA's that want to test out Semantic Search capabilities with their customers index. This app has side-by-side comaparitive functionality that allows you to see Azure Cognitive Search BM25 vs Semantic Search results.
 ## Prerequisites

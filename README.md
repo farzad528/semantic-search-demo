@@ -17,6 +17,13 @@ This project can be run anywhere, but VS Code is required for local debugging.
    ```bash
    npm install
    ```
+3. Create a .env file with the following info:
+```
+REACT_APP_SEARCH_DOMAIN={your-search-service-domain}
+REACT_APP_SEARCH_API_KEY={your-api-key}
+REACT_APP_SEARCH_SEMANTIC_CONFIG={your-semantic-config}
+REACT_APP_SEARCH_INDEX_NAME={your-index-name}
+```
 3.	Run the React Application
    ```bash
    npm start

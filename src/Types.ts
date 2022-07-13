@@ -6,10 +6,10 @@ export interface QuerySuggestion {
 
 export interface DatasetDefinition {
     iconUrl: string;
-    name: string;
+    name: any;
     datasetKind: DatasetKind;
     type: string;
-    indexName: string;
+    indexName: any;
     fieldNames: string[];
     keyField: string;
     captionFields: string[];
@@ -30,8 +30,7 @@ export enum DatasetKind {
     Cord = 1,
     Msmarco = 2,
     Msdocs = 3,
-    Homedepot = 4,
-    Anthem = 5
+    YourDataset = 4
 }
 
 export interface AzsSearchRequest {

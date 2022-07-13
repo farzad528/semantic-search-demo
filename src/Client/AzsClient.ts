@@ -58,7 +58,7 @@ export async function search(request: AzsSearchRequest): Promise<Response> {
         "search": request.query,
         ...(request.isSemanticSearch && {
             "queryType": 'semantic',
-            "semanticConfiguration": "semanticconfig1",
+            "semanticConfiguration": process.env.REACT_APP_SEMANTIC_CONFIG,
             ...(request.queryLanguage && { "queryLanguage": request.queryLanguage }),
             ...(request.speller && { "speller": request.speller }),
             ...(request.isQnAEnabled && { "answers": 'extractive|count-1' }),

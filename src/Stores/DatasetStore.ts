@@ -38,10 +38,10 @@ const datasetDefinitions: DatasetDefinition[] = [{
 },
 {
     iconUrl: 'images/msmarco.png',
-    name: 'Demo for Anthem',
-    datasetKind: DatasetKind.Anthem,
+    name: 'Demo for' + process.env.REACT_APP_SEARCH_CUSTOMER_NAME,
+    datasetKind: DatasetKind.YourDataset,
     type: 'Document',
-    indexName: 'semanticsearchindex',
+    indexName: process.env.REACT_APP_SEARCH_INDEX_NAME,
     fieldNames: ["url,file_name,keyPhrases,locations,people,links"],
     keyField: 'id',
     captionFields: ['file_name'],
@@ -76,10 +76,5 @@ export const defaultQuerySuggestions: QuerySuggestion[] = [
         query: 'What are COVID-19 symptoms?',
         semanticType: 'CAPTIONS',
         datasetDefinition: getDataDatasetByKind(DatasetKind.Cord),
-    },
-    {
-        query: 'H0031',
-        semanticType: 'CAPTIONS',
-        datasetDefinition: getDataDatasetByKind(DatasetKind.Anthem),
     },
 ];

@@ -3,7 +3,7 @@
 
 This sample app is for CSA's that want to test out Semantic Search capabilities with their customers index. This app has side-by-side comaparitive functionality that allows you to see Azure Cognitive Search BM25 vs Semantic Search results.
 
-You can find a live demo [here] (https://semantic-search-demo-web.azurewebsites.net/). 
+You can find a live demo [here](https://semantic-search-demo-web.azurewebsites.net/). 
 ## Prerequisites
 - A GitHub account
 - [Node.js and Git](https://nodejs.org/)

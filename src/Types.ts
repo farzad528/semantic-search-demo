@@ -26,11 +26,13 @@ export interface DocumentResult {
 }
 
 
+
+
 export enum DatasetKind {
     Cord = 1,
     Msmarco = 2,
     Msdocs = 3,
-    YourDataset = 4
+    YourDataset = 4,
 }
 
 export interface AzsSearchRequest {

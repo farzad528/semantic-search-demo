@@ -165,10 +165,6 @@ export default ({ children }: { children: any }) => {
 
             setPagination(0);
             setDatasetKind(newDatasetKind);
-
-            if (newDatasetKind === DatasetKind.Homedepot) {
-                alert('This dataset is not supported. Placeholder for now.');
-            }
         }
     };
 

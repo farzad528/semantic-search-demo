@@ -45,6 +45,7 @@ export interface AzsSearchRequest {
     top?: number;
     speller?: 'lexicon' | 'standard' | 'none' | undefined;
     datasetKind: DatasetKind;
+    filter?: string
 }
 
 export interface SearchResponseAnswer {

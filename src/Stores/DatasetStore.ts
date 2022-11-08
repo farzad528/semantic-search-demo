@@ -37,16 +37,16 @@ const datasetDefinitions: DatasetDefinition[] = [{
     attributionField: 'Url',
 },
 {
-    iconUrl: 'images/msmarco.png',
+    iconUrl: 'images/mydataset.png',
     name: 'Demo for ' + process.env.REACT_APP_SEARCH_CUSTOMER_NAME,
     datasetKind: DatasetKind.YourDataset,
     type: 'Document',
     indexName: process.env.REACT_APP_SEARCH_INDEX_NAME,
-    fieldNames: ["doc_id,doc_passage,doc_domain"],
-    keyField: 'doc_id',
-    captionFields: ['doc_passage'],
-    titleField: 'doc_id',
-    attributionField: 'doc_id',
+    fieldNames: ["id, docid, title_en_lucene, title_en_microsoft, text_en_lucene, text_en_microsoft"],
+    keyField: 'id',
+    captionFields: ['text_en_lucene'],
+    titleField: 'title_en_lucene',
+    attributionField: 'id',
 }];
 
 export const getDefaultDataset = () => DatasetKind.Cord;

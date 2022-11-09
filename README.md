@@ -23,7 +23,7 @@ This project can be run anywhere, but VS Code is required for local debugging.
 ```
 REACT_APP_SEARCH_DOMAIN="{your-search-service-domain}"
 REACT_APP_SEARCH_API_KEY={your-api-key}
-REACT_APP_SEARCH_SEMANTIC_CONFIG="{your-semantic-config}"
+REACT_APP_SEARCH_SEMANTIC_CONFIG={your-semantic-config}
 REACT_APP_SEARCH_INDEX_NAME={your-index-name}
 REACT_APP_SEARCH_CUSTOMER_NAME={your-index-name}
 ```

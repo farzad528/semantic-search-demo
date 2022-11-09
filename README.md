@@ -30,11 +30,13 @@ REACT_APP_SEARCH_CUSTOMER_NAME={your-index-name}
 4. Configure your dataset store
 - Go to Stores > DatasetStore.ts
 - Fill out the below datasetDefinition object based off your index definition to display the documents in the UI appropriatley. Note: attributionField and description are OPTIONAL.
+```
    - fieldNames: [fieldName1, fieldName2, fieldName3, etc]
    - keyField: [keyFieldName]
    - titleField: [titleFieldName]
    - attributionField: [urlFieldName]
    - description: "free inout text box describting your dataset"
+```
 5.	Run the React Application
    ```bash
    npm start

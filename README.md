@@ -35,7 +35,7 @@ REACT_APP_SEARCH_CUSTOMER_NAME={your-index-name}
    - keyField: [keyFieldName]
    - titleField: [titleFieldName]
    - attributionField: [urlFieldName]
-   - description: "free inout text box describting your dataset"
+   - description: "free input text box describing your dataset"
 ```
 5.	Run the React Application
    ```bash

@@ -10,13 +10,13 @@ const datasetDefinitions: DatasetDefinition[] = [
     type: "Document",
     indexName: process.env.REACT_APP_SEARCH_INDEX_NAME,
     fieldNames: [
-      "id, docid, title_en_lucene, title_en_microsoft, text_en_lucene, text_en_microsoft",
+      "Survey_Job_Title,Survey_Job_Desc",
     ],
-    keyField: "id",
-    captionFields: ["text_en_lucene"],
-    titleField: "title_en_lucene",
+    keyField: "AzureSearch_DocumentKey",
+    captionFields: ["Survey_Job_Desc"],
+    titleField: "Survey_Job_Title",
     attributionField: "id",
-    description: "Dataset of Wikipedia Articles"
+    description: "Dataset of Job Descriptions"
   },
 ];
 

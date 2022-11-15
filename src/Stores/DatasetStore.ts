@@ -10,17 +10,17 @@ const datasetDefinitions: DatasetDefinition[] = [
     type: "Document",
     indexName: process.env.REACT_APP_SEARCH_INDEX_NAME,
     fieldNames: [
-      "id, docid, title_en_lucene, title_en_microsoft, text_en_lucene, text_en_microsoft",
+      "AzureSearch_DocumentKey, Survey_Job_Title, Survey_Job_Desc",
     ],
-    keyField: "id",
-    captionFields: ["text_en_lucene"],
-    titleField: "title_en_lucene",
-    attributionField: "id",
-    description: "Dataset of Wikipedia Articles"
+    keyField: "AzureSearch_DocumentKey",
+    captionFields: ["Survey_Job_Desc"],
+    titleField: "Survey_Job_Title",
+    attributionField: "",
+    description: "Dataset of Job Descriptions"
   },
 ];
 
-export const getDefaultDataset = () => DatasetKind.Cord;
+export const getDefaultDataset = () => DatasetKind.YourDataset;
 
 export const getDataDatasetByKind = (datasetKind: DatasetKind) =>
   datasetDefinitions.find(
@@ -32,7 +32,7 @@ export const getDataDatasetDefinitions = () => datasetDefinitions;
 // TODO: UPDATE QUERY SUGGESTIONS HERE
 export const defaultQuerySuggestions: QuerySuggestion[] = [
   {
-    query: "when did stern retire",
+    query: "Accountant",
     semanticType: "ANSWERS",
     datasetDefinition: getDataDatasetByKind(DatasetKind.YourDataset),
   },

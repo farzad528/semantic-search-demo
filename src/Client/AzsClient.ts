@@ -56,10 +56,10 @@ export async function search(request: AzsSearchRequest): Promise<Response> {
   let highlightVal;
   let sc = process.env.REACT_APP_SEARCH_SEMANTIC_CONFIG;
   switch (request.datasetKind) {
-    case DatasetKind.Msmarco:
-      highlightVal = "Body";
+    case DatasetKind.YourSecondaryDataset:
+      highlightVal = "";
       break;
-    case DatasetKind.Cord:
+    case DatasetKind.YourTertiaryDataset:
       highlightVal = "body,Abstract";
       break;
     default:

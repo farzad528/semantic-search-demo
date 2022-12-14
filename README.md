@@ -1,5 +1,5 @@
 # Azure Cognitive Search - Semantic Search Demo for CSAs
-**DISCLAIMER: This app is not for production use and is strictly for internal GBBs and CSAs who want to demo to customers the value that Semantic Search can bring to customers.**
+**DISCLAIMER: This app is not for production use and is strictly for customers to demo the value that Semantic Search can bring.**
 
 This sample app is for CSA's that want to test out Semantic Search capabilities with their customers index. This app has side-by-side comaparitive functionality that allows you to see Azure Cognitive Search BM25 vs Semantic Search results.
 
@@ -43,4 +43,4 @@ REACT_APP_SEARCH_CUSTOMER_NAME={your-index-name}
    ```
 
 ## Contribute
-If you'd like to contribute, please submit a PR and a member of the Semantic Search Team will approve/reject the PR. For further info, please reach out to the Semantic Search PM, [Farzad Sunavala](fsunavala@microsoft.com)
+If you'd like to contribute, please submit a PR and a member of the Semantic Search Team will approve/reject the PR.

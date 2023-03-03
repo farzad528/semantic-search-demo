@@ -1,7 +1,7 @@
 # Azure Cognitive Search - Semantic Search Demo Template
 **DISCLAIMER: This app is not for production use and is strictly for customers to demo the value that Semantic Search can bring.**
 
-This sample app is for CSA's that want to test out Semantic Search capabilities with their customers index. This app has side-by-side comaparitive functionality that allows you to see Azure Cognitive Search BM25 vs Semantic Search results.
+This sample app is for customers that want to test out Semantic Search capabilities with their customers index. This app has side-by-side comaparitive functionality that allows you to see Azure Cognitive Search BM25 vs Semantic Search results.
 
 You can find a live demo [here](https://semantic-search-demo-web.azurewebsites.net/). 
 ## Prerequisites

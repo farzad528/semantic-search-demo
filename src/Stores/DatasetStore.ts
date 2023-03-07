@@ -10,13 +10,13 @@ const datasetDefinitions: DatasetDefinition[] = [
     type: "Document",
     indexName: process.env.REACT_APP_SEARCH_INDEX_NAME,
     fieldNames: [
-      "id, docid, title_en_lucene, title_en_microsoft, text_en_lucene, text_en_microsoft",
+      "id, content",
     ],
     keyField: "id",
-    captionFields: ["text_en_lucene"],
-    titleField: "title_en_lucene",
-    attributionField: "id",
-    description: "Dataset of Wikipedia Articles"
+    captionFields: ["content"],
+    titleField: "id",
+    attributionField: "",
+    description: "Dataset of Contose Cooking"
   },
 ];
 
@@ -32,23 +32,18 @@ export const getDataDatasetDefinitions = () => datasetDefinitions;
 // TODO: UPDATE QUERY SUGGESTIONS HERE
 export const defaultQuerySuggestions: QuerySuggestion[] = [
   {
-    query: "when did stern retire",
+    query: "how long to bake a cheesecake",
     semanticType: "ANSWERS",
     datasetDefinition: getDataDatasetByKind(DatasetKind.YourPrimaryDataset),
   },
   {
-    query: "qatar world cup",
-    semanticType: "ANSWERS",
+    query: "spaghetti",
+    semanticType: "SPELLER",
     datasetDefinition: getDataDatasetByKind(DatasetKind.YourPrimaryDataset),
   },
   {
-    query: "who bought chelsea fc",
-    semanticType: "ANSWERS",
-    datasetDefinition: getDataDatasetByKind(DatasetKind.YourPrimaryDataset),
-  },
-  {
-    query: "What is Lebanons Market cap",
-    semanticType: "ANSWERS",
+    query: "spicy food",
+    semanticType: "CAPTIONS",
     datasetDefinition: getDataDatasetByKind(DatasetKind.YourPrimaryDataset),
   },
 ];

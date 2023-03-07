@@ -56,8 +56,8 @@ export const AnswerResultCard = React.forwardRef<HTMLDivElement, AnswerResultCar
       {
         answer.attribution?.length ?
           <>
-            <a href={answer.attribution} rel="nofollow" target="_blank"><p style={styles.title}>{answer.title}</p></a>
-            <a href={answer.attribution} rel="nofollow" target="_blank"><p style={styles.attribution}>{answer.attribution}</p></a>
+            <a href={answer.attribution} rel="noreferrer" target="_blank"><p style={styles.title}>{answer.title}</p></a>
+            <a href={answer.attribution} rel="noreferrer" target="_blank"><p style={styles.attribution}>{answer.attribution}</p></a>
           </> :
           <>
             <p style={styles.title}>{answer.title}</p>

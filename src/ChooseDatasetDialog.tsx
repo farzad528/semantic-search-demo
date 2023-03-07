@@ -65,7 +65,9 @@ interface ChooseDatasetDialogProps {
 
 export const ChooseDatasetDialog: React.FunctionComponent<ChooseDatasetDialogProps> = ({ hideDialog, toggleHideDialog }) => {
   const styles = useMemo(() => getStyles(), []);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [datasets, _] = useState<DatasetDefinition[]>(DatasetStore.getDataDatasetDefinitions())
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { datasetKind: [datasetKind, setDatasetKind], } = React.useContext(UIStateStoreContext);
 
   const onSelectDatasetKind = (datasetKind: DatasetKind) => {

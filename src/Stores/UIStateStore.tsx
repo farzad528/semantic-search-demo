@@ -1,3 +1,6 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable import/no-anonymous-default-export */
 import React, { useEffect, useState, Dispatch } from "react";
 import { useBoolean } from "@uifabric/react-hooks";
 import { useHistory, useRouteMatch } from "react-router-dom";

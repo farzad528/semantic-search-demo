@@ -60,8 +60,8 @@ export const DocumentResultCard = React.forwardRef<HTMLDivElement, DocumentResul
       {
         document.attribution?.length ?
           <>
-            <a href={document.attribution} rel="noreferrer" target="_blank"><p className={titleClassName}>{document.title}</p></a>
-            <a href={document.attribution} rel="noreferrer" target="_blank"><p className={attributionClassName}>{document.attribution}</p></a>
+            <a href={document.attribution} rel="nofollow" target="_blank"><p className={titleClassName}>{document.title}</p></a>
+            <a href={document.attribution} rel="nofollow" target="_blank"><p className={attributionClassName}>{document.attribution}</p></a>
           </> :
           <>
             <p className={titleClassName}>{document.title}</p>

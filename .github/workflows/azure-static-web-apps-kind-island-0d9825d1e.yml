@@ -33,9 +33,6 @@ jobs:
         env: # Add environment variables here
           REACT_APP_SEARCH_DOMAIN: ${{ secrets.REACT_APP_SEARCH_DOMAIN}}
           REACT_APP_SEARCH_API_KEY: ${{ secrets.REACT_APP_SEARCH_API_KEY }}
-          REACT_APP_SEARCH_SEMANTIC_CONFIG: ${{ secrets.REACT_APP_SEARCH_SEMANTIC_CONFIG }}
-          REACT_APP_SEARCH_INDEX_NAME: ${{ secrets.REACT_APP_SEARCH_INDEX_NAME }}
-          REACT_APP_SEARCH_CUSTOMER_NAME: ${{ secrets.REACT_APP_SEARCH_CUSTOMER_NAME }}
           ###### End of Repository/Build Configurations ######
 
 

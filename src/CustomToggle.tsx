@@ -22,7 +22,6 @@ interface CustomToggleProps {
 }
 
 export const CustomToggle: React.FunctionComponent<CustomToggleProps> = ({ isToggled, label, onChange, disabled = false }) => {
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const styles = useMemo(() => getStyles(disabled), []);
 
   return (

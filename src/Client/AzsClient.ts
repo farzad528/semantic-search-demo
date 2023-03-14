@@ -34,16 +34,13 @@ async function fetchData(
       headers: {
         "Content-Type": "application/json",
         "api-key": process.env.REACT_APP_SEARCH_API_KEY,
-        Accept: "application/json",
         cacheKey: requestCacheKey,
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Credentials": true,
       },
       body: JSON.stringify(body),
     }
   );
 
-  if (response.status === 200) {
+  if (response.status == 200) {
     cachedResponse[requestCacheKey] = response.clone();
   } else if (!isRetry) {
     return fetchData(indexName, body, requestCacheKey, true);
@@ -54,23 +51,22 @@ async function fetchData(
 
 export async function search(request: AzsSearchRequest): Promise<Response> {
   let highlightVal;
-  let sc = process.env.REACT_APP_SEARCH_SEMANTIC_CONFIG;
   switch (request.datasetKind) {
-    case DatasetKind.YourSecondaryDataset:
-      highlightVal = "";
+    case DatasetKind.Msmarco:
+      highlightVal = "Body";
       break;
-    case DatasetKind.YourTertiaryDataset:
-      highlightVal = "body,Abstract";
+    case DatasetKind.Cord:
+      highlightVal = "body";
       break;
     default:
-      highlightVal = "";
+      highlightVal = "body_en_us";
   }
 
   const body = {
     search: request.query,
     ...(request.isSemanticSearch && {
       queryType: "semantic",
-      semanticConfiguration: sc,
+      semanticConfiguration: "semantic-configuration",
       ...(request.queryLanguage && { queryLanguage: request.queryLanguage }),
       ...(request.speller && { speller: request.speller }),
       ...(request.isQnAEnabled && { answers: "extractive|count-1" }),

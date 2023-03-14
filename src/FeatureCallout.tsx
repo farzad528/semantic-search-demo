@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { Stack, Callout, DirectionalHint, Separator } from 'office-ui-fabric-react';
+import { Stack, Callout, DirectionalHint, Toggle, Separator } from 'office-ui-fabric-react';
 import { useId } from '@uifabric/react-hooks';
 
 import { UIStateStoreContext } from './Stores/UIStateStore';
@@ -53,7 +53,7 @@ export const FeatureCallout: React.FunctionComponent<FeatureCalloutProps> = ({
     isCaptionsOn: [isCaptionsOn, toggleIsCaptionsOnCallback],
   } = React.useContext(UIStateStoreContext);
 
-  //const isCompareToDefaultDisabled = !isSpellingOn && !isRankOn && !isAnswersOn && !isCaptionsOn;
+  const isCompareToDefaultDisabled = !isSpellingOn && !isRankOn && !isAnswersOn && !isCaptionsOn;
   const calloutLabelId: string = useId('feature-callout-label');
   const calloutDescriptionId: string = useId('feature-callout-description');
 

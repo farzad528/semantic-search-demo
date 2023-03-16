@@ -22,7 +22,7 @@ interface CustomToggleProps {
 }
 
 export const CustomToggle: React.FunctionComponent<CustomToggleProps> = ({ isToggled, label, onChange, disabled = false }) => {
-  const styles = useMemo(() => getStyles(disabled), []);
+  const styles = useMemo(() => getStyles(disabled), [disabled]);
 
   return (
     <Stack horizontal horizontalAlign="space-between" verticalAlign="center">

@@ -1,4 +1,4 @@
-import React, { memo, useMemo, useState } from "react";
+import React, { memo, useMemo } from "react";
 import { Stack } from "office-ui-fabric-react";
 
 import DocumentResultCard from "./DocumentResultCard";

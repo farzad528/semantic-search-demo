@@ -37,7 +37,7 @@ export const App: React.FunctionComponent = () => {
           </Route>
         </Switch>
       </UIStateStoreProvider>
-      <a className="learn-more-link" href={learnMoreLink} target="_blank">Learn more about Semantic Search</a>
+      <a className="learn-more-link" href={learnMoreLink} target="_blank" rel="noreferrer">Learn more about Semantic Search</a>
     </Router>
   );
 };

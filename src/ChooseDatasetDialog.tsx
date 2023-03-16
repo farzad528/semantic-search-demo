@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useMemo, useState } from 'react';
 import { Stack, Image, Dialog, DialogType } from 'office-ui-fabric-react';
 

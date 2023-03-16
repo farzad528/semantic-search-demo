@@ -40,7 +40,7 @@ async function fetchData(
     }
   );
 
-  if (response.status == 200) {
+  if (response.status === 200) {
     cachedResponse[requestCacheKey] = response.clone();
   } else if (!isRetry) {
     return fetchData(indexName, body, requestCacheKey, true);

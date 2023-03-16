@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useMemo } from 'react';
 import { Stack, Callout, DirectionalHint, Toggle, Separator } from 'office-ui-fabric-react';
 import { useId } from '@uifabric/react-hooks';

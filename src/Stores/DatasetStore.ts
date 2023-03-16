@@ -70,7 +70,7 @@ export const defaultQuerySuggestions: QuerySuggestion[] = [
     datasetDefinition: getDataDatasetByKind(DatasetKind.Cord),
   },
   {
-    query: "How long can I host a live event on Microsoft Teams?",
+    query: "What is a line chart in Power BI?",
     semanticType: "ANSWERS",
     datasetDefinition: getDataDatasetByKind(DatasetKind.Msdocs),
   },
